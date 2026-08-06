@@ -5,4 +5,5 @@ This folder contains sample plugins that demonstrate integration with external s
 ## Included Samples
 
 - `avalara-tax-sample-plugin/`: Sample plugin for Avalara tax integration.
-- `dqm-address-cleansing-sample-plugin/`: Sample plugin for SAP Data Quality Management, Microservices for Location Data integration.
+- `dqm-address-cleansing-sample-plugin/`: Sample plugin for SAP Data Quality Management, Microservices for Location Data integration.
+- `s4ordersimulation-sample-plugin/`: Sample plugin for SAP S/4HANA Sales Order Simulation integration.
