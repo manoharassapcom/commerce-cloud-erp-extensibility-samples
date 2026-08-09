@@ -13,12 +13,21 @@
           "multiple": false,
           "attributes": [
             {
-              "name": "currencyCode",
-              "path": "/data/currencyCode",
-              "dataType": "STRING",
+              "name": "currency",
+              "path": "/data/currency",
+              "dataType": "OBJECT",
               "required": true,
               "multiple": false,
-              "attributes": []
+              "attributes": [
+                {
+                  "name": "code",
+                  "path": "/data/currency/code",
+                  "dataType": "STRING",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                }
+              ]
             },
             {
               "name": "net",
@@ -159,12 +168,29 @@
                   "attributes": []
                 },
                 {
-                  "name": "salesMeasureUnitCode",
-                  "path": "/data/entries/salesMeasureUnitCode",
-                  "dataType": "STRING",
+                  "name": "salesMeasureUnit",
+                  "path": "/data/entries/salesMeasureUnit",
+                  "dataType": "OBJECT",
                   "required": true,
                   "multiple": false,
-                  "attributes": []
+                  "attributes": [
+                    {
+                      "name": "code",
+                      "path": "/data/entries/salesMeasureUnit/code",
+                      "dataType": "STRING",
+                      "required": true,
+                      "multiple": false,
+                      "attributes": []
+                    },
+                    {
+                      "name": "isoCode",
+                      "path": "/data/entries/salesMeasureUnit/isoCode",
+                      "dataType": "STRING",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": []
+                    }
+                  ]
                 }
               ]
             },
