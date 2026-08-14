@@ -314,7 +314,7 @@
               "name": "operations",
               "path": "/data/operations",
               "dataType": "OBJECT",
-              "required": true,
+              "required": false,
               "multiple": true,
               "attributes": [
                 {
@@ -619,6 +619,72 @@
                           ]
                         }
                       ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "error",
+              "path": "/data/error",
+              "dataType": "OBJECT",
+              "required": false,
+              "multiple": false,
+              "attributes": [
+                {
+                  "name": "code",
+                  "path": "/data/error/code",
+                  "dataType": "STRING",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "message",
+                  "path": "/data/error/message",
+                  "dataType": "STRING",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "target",
+                  "path": "/data/error/target",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "details",
+                  "path": "/data/error/details",
+                  "dataType": "OBJECT",
+                  "required": false,
+                  "multiple": true,
+                  "attributes": [
+                    {
+                      "name": "code",
+                      "path": "/data/error/details/code",
+                      "dataType": "STRING",
+                      "required": true,
+                      "multiple": false,
+                      "attributes": []
+                    },
+                    {
+                      "name": "message",
+                      "path": "/data/error/details/message",
+                      "dataType": "STRING",
+                      "required": true,
+                      "multiple": false,
+                      "attributes": []
+                    },
+                    {
+                      "name": "target",
+                      "path": "/data/error/details/target",
+                      "dataType": "STRING",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": []
                     }
                   ]
                 }
