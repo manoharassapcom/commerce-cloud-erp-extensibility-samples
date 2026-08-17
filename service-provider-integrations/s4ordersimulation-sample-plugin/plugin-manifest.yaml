@@ -3,9 +3,10 @@ version: 1.0.0
 sourceAccountId: "SAP"
 sourceTenantId: "SAP_CCS"
 description: Calculation Engine Integration with S/4HANA Sales Order Simulation
-author: SAP Commerce Cloud
+author: SAP Commerce Cloud, cloud ERP edition
 pluginId: a8adcc4c-7656-4874-b5f8-da89ed50144d
 license: Apache-2.0
+repository: https://github.com/SAP-samples/commerce-cloud-erp-extensibility-samples/tree/main/service-provider-integrations/s4ordersimulation-sample-plugin
 components:
   - type: synchronous_extension
     componentId: 5613dc2b-c748-4979-9623-63d9a9b86371
