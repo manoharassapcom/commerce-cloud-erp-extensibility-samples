@@ -26,6 +26,14 @@
                   "required": true,
                   "multiple": false,
                   "attributes": []
+                },
+                {
+                  "name": "sapCode",
+                  "path": "/data/currency/sapCode",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
                 }
               ]
             },
@@ -338,6 +346,14 @@
                           "required": false,
                           "multiple": false,
                           "attributes": []
+                        },
+                        {
+                          "name": "code",
+                          "path": "/data/addresses/postalAddress/primaryRegion/code",
+                          "dataType": "STRING",
+                          "required": true,
+                          "multiple": false,
+                          "attributes": []
                         }
                       ]
                     },
@@ -376,11 +392,60 @@
                           "name": "name",
                           "path": "/data/addresses/postalAddress/district/name",
                           "dataType": "STRING",
-                          "required": false,
+                          "required": true,
                           "multiple": false,
                           "attributes": []
                         }
                       ]
+                    },
+                    {
+                      "name": "town",
+                      "path": "/data/addresses/postalAddress/town",
+                      "dataType": "OBJECT",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": [
+                        {
+                          "name": "name",
+                          "path": "/data/addresses/postalAddress/town/name",
+                          "dataType": "STRING",
+                          "required": true,
+                          "multiple": false,
+                          "attributes": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "building",
+                      "path": "/data/addresses/postalAddress/building",
+                      "dataType": "STRING",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": []
+                    },
+                    {
+                      "name": "floor",
+                      "path": "/data/addresses/postalAddress/floor",
+                      "dataType": "STRING",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": []
+                    },
+                    {
+                      "name": "door",
+                      "path": "/data/addresses/postalAddress/door",
+                      "dataType": "STRING",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": []
+                    },
+                    {
+                      "name": "poBox",
+                      "path": "/data/addresses/postalAddress/poBox",
+                      "dataType": "STRING",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": []
                     }
                   ]
                 }
@@ -409,14 +474,14 @@
           "name": "extensibilityContext",
           "path": "/extensibilityContext",
           "dataType": "OBJECT",
-          "required": false,
+          "required": true,
           "multiple": false,
           "attributes": [
             {
               "name": "id",
               "path": "/extensibilityContext/id",
               "dataType": "STRING",
-              "required": false,
+              "required": true,
               "multiple": false,
               "attributes": []
             },
@@ -424,7 +489,7 @@
               "name": "triggeredAt",
               "path": "/extensibilityContext/triggeredAt",
               "dataType": "STRING",
-              "required": false,
+              "required": true,
               "multiple": false,
               "attributes": []
             },
@@ -432,7 +497,7 @@
               "name": "extensionPointId",
               "path": "/extensibilityContext/extensionPointId",
               "dataType": "STRING",
-              "required": false,
+              "required": true,
               "multiple": false,
               "attributes": []
             }
@@ -657,6 +722,15 @@
             {
               "name": "CityName",
               "path": "/_Partner/CityName",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "maxLength": 40,
+              "attributes": []
+            },
+            {
+              "name": "DistrictName",
+              "path": "/_Partner/DistrictName",
               "dataType": "STRING",
               "required": false,
               "multiple": false,

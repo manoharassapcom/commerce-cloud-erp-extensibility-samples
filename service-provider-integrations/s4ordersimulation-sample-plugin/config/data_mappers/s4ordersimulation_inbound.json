@@ -270,14 +270,14 @@
           "name": "extensibilityContext",
           "path": "/extensibilityContext",
           "dataType": "OBJECT",
-          "required": false,
+          "required": true,
           "multiple": false,
           "attributes": [
             {
               "name": "id",
               "path": "/extensibilityContext/id",
               "dataType": "STRING",
-              "required": false,
+              "required": true,
               "multiple": false,
               "attributes": []
             },
@@ -285,7 +285,7 @@
               "name": "triggeredAt",
               "path": "/extensibilityContext/triggeredAt",
               "dataType": "STRING",
-              "required": false,
+              "required": true,
               "multiple": false,
               "attributes": []
             },
@@ -293,7 +293,7 @@
               "name": "extensionPointId",
               "path": "/extensibilityContext/extensionPointId",
               "dataType": "STRING",
-              "required": false,
+              "required": true,
               "multiple": false,
               "attributes": []
             }
