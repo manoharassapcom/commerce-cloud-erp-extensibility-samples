@@ -38,8 +38,8 @@
               ]
             },
             {
-              "name": "net",
-              "path": "/data/net",
+              "name": "isNet",
+              "path": "/data/isNet",
               "dataType": "BOOLEAN",
               "required": true,
               "multiple": false,
