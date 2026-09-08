@@ -1,8 +1,8 @@
-name: S4HANA Calculation Engine Plugin
+name: S4HANA Calculation Engine Sales price combine Plugin
 version: 1.0.0
 sourceAccountId: "SAP"
 sourceTenantId: "SAP_CCS"
-description: Calculation Engine Integration with S/4HANA Sales Order Simulation
+description: Calculation Engine Integration with S/4HANA Sales Order Simulation & Integrates with SAP S/4HANA to retrieve real-time sales price
 author: SAP Commerce Cloud, cloud ERP edition
 pluginId: a8adcc4c-7656-4874-b5f8-da89ed50144d
 license: Apache-2.0
@@ -23,3 +23,18 @@ components:
   - type: "data_mapper"
     componentId: "1be45619-aeb1-47b5-b0e6-a7acd747871a"
     path: "config/data_mappers/s4ordersimulation_inbound.json"
+  - type: synchronous_extension
+    componentId: f2f507d6-7397-4ea3-bae8-26ed4c0b0e45
+    path: "config/synchronous_extensions/s4salesprice.json"
+  - type: "function"
+    componentId: "b91466a0-5131-4829-83e1-e52ba3042f2f"
+    path: "config/functions/s4SalesPriceOutboundFunction.json"
+  - type: "function"
+    componentId: "cc28dc08-5095-49d5-9442-2d1ecde27abe"
+    path: "config/functions/s4SalesPriceInboundFunction.json"
+  - type: "data_mapper"
+    componentId: "2bdcb641-d256-4a7b-be87-264d03114087"
+    path: "config/data_mappers/s4salesprice_outbound.json"
+  - type: "data_mapper"
+    componentId: "1029b8b8-3ed0-4616-80ab-940884d5e2f8"
+    path: "config/data_mappers/s4saleprie_inbound.json"
