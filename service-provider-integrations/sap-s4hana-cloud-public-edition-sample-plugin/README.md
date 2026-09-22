@@ -1,32 +1,32 @@
-# S/4HANA Sales Order Simulation Sample Plugin
+# SAP S/4HANA Cloud Public Edition Sample Plugin
 
 ## Description
 
 SAP Commerce Cloud, cloud ERP edition exposes an extension point for price calculation with an external provider. This extension point lets you integrate with external calculation service providers or with a custom calculation service of your choice.
 
-The S/4HANA Sales Order Simulation Sample Plugin demonstrates how to integrate SAP S/4HANA with the calculation extension in SAP Commerce Cloud, cloud ERP edition. The plugin creates the "Simulate Sales Order by an External Provider" extension configuration and provides the required data mappings for this extension. It uses the SAP S/4HANA Sales Order Simulation API (`POST /SalesOrder`) to simulate sales order pricing, discounts, taxes, and freight charges in the cart and during checkout.
+The SAP S/4HANA Cloud Public Edition Sample Plugin demonstrates how to integrate SAP S/4HANA with the calculation extension in SAP Commerce Cloud, cloud ERP edition. The plugin creates the "Simulate Sales Order by an External Provider" extension configuration and provides the required data mappings for this extension. It uses the SAP S/4HANA Sales Order Simulation API (`POST /SalesOrder`) to simulate sales order pricing, discounts, taxes, and freight charges in the cart and during checkout.
 
-For detailed guidance on integrating SAP Commerce Cloud, cloud ERP edition with calculation service providers, refer to [this page](https://help.sap.com/docs/CC_CEE). To learn more about the S/4HANA Sales Order Simulation Sample Plugin, visit [this documentation](https://help.sap.com/docs/CC_CEE).
+For detailed guidance on integrating SAP Commerce Cloud, cloud ERP edition with calculation service providers, refer to [this page](https://help.sap.com/docs/CC_CEE). To learn more about the SAP S/4HANA Cloud Public Edition Sample Plugin, visit [this documentation](https://help.sap.com/docs/CC_CEE).
 
 ## Requirements
 
 - SAP Commerce Cloud, cloud ERP edition
-- SAP S/4HANA system with Sales Order Simulation API enabled
+- SAP S/4HANA Cloud Public Edition system with Sales Order Simulation API enabled
 
 ## Download and Installation
 
-1. Download the latest release of this plugin from the [releases page](https://github.com/SAP-samples/commerce-cloud-erp-extensibility-samples/releases?q=s4ordersimulation&expanded=true). Look for the assets section of the respective release and download the `s4ordersimulation-sample-plugin-<version>.zip` file. Alternatively, you can build the plugin zip manually from the `service-provider-integrations/s4ordersimulation-sample-plugin` directory:
+1. Download the latest release of this plugin from the [releases page](https://github.com/SAP-samples/commerce-cloud-erp-extensibility-samples/releases?q=sap-s4hana-cloud-public-edition&expanded=true). Look for the assets section of the respective release and download the `sap-s4hana-cloud-public-edition-sample-plugin-<version>.zip` file. Alternatively, you can build the plugin zip manually from the `service-provider-integrations/sap-s4hana-cloud-public-edition-sample-plugin` directory:
    The resulting zip should have the following structure:
 
    ```
-   s4ordersimulation-sample-plugin-<version>.zip
+   sap-s4hana-cloud-public-edition-sample-plugin-<version>.zip
    ├── plugin-manifest.yaml
    └── config/
        └── ...
    ```
    For example, on Unix/macOS:
    ```bash
-   zip -r s4ordersimulation-sample-plugin-<version>.zip plugin-manifest.yaml config
+   zip -r sap-s4hana-cloud-public-edition-sample-plugin-<version>.zip plugin-manifest.yaml config
    ```
 2. Follow the installation instructions provided on [this help page](https://help.sap.com/docs/CC_CEE).
 
